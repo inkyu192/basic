@@ -1,18 +1,17 @@
 package com.spring.core.autowired;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import java.util.List;
-import java.util.Map;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import com.spring.core.AutoAppConfig;
 import com.spring.core.discount.DiscountPolicy;
 import com.spring.core.member.Grade;
 import com.spring.core.member.Member;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.List;
+import java.util.Map;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class AllBeanTest {
 	

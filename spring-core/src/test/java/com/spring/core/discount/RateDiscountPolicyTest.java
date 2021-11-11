@@ -1,15 +1,12 @@
 package com.spring.core.discount;
 
+import com.spring.core.AppConfig;
+import com.spring.core.member.Grade;
+import com.spring.core.member.Member;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import com.spring.core.AppConfig;
-import com.spring.core.member.Grade;
-import com.spring.core.member.Member;
-
-//import�� *�� �������� ����.
-//import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class RateDiscountPolicyTest {

@@ -1,16 +1,15 @@
 package com.spring.core.beanfind;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
+import com.spring.core.AppConfig;
+import com.spring.core.member.MemberService;
+import com.spring.core.member.MemberServiceImpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.spring.core.AppConfig;
-import com.spring.core.member.MemberService;
-import com.spring.core.member.MemberServiceImpl;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ApplicationContextBasicFindTest {
 

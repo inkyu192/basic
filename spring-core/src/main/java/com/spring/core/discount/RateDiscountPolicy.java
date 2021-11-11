@@ -1,8 +1,5 @@
 package com.spring.core.discount;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
-
 import com.spring.core.member.Grade;
 import com.spring.core.member.Member;
 

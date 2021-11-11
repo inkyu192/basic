@@ -1,10 +1,9 @@
 package com.spring.core.member;
 
+import com.spring.core.AppConfig;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import com.spring.core.AppConfig;
 
 public class MemberServiceTest {
 	

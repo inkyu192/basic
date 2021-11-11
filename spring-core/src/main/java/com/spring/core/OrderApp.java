@@ -1,13 +1,12 @@
 package com.spring.core;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import com.spring.core.member.Grade;
 import com.spring.core.member.Member;
 import com.spring.core.member.MemberService;
 import com.spring.core.order.Order;
 import com.spring.core.order.OrderService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class OrderApp {
 

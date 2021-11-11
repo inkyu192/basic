@@ -1,11 +1,10 @@
 package com.spring.core.beanfind;
 
+import com.spring.core.AppConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.spring.core.AppConfig;
 
 class ApplicationContextInfoTest {
 

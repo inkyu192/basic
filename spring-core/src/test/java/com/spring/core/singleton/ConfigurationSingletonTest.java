@@ -1,15 +1,14 @@
 package com.spring.core.singleton;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import com.spring.core.AppConfig;
 import com.spring.core.member.MemberRepository;
 import com.spring.core.member.MemberServiceImpl;
 import com.spring.core.order.OrderServiceImpl;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ConfigurationSingletonTest {
 	@Test

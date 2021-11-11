@@ -1,8 +1,5 @@
 package com.spring.core;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 import com.spring.core.discount.DiscountPolicy;
 import com.spring.core.discount.RateDiscountPolicy;
 import com.spring.core.member.MemberRepository;
@@ -11,6 +8,8 @@ import com.spring.core.member.MemberServiceImpl;
 import com.spring.core.member.MemoryMemberRepository;
 import com.spring.core.order.OrderService;
 import com.spring.core.order.OrderServiceImpl;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {

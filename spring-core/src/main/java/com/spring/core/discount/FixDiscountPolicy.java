@@ -1,9 +1,8 @@
 package com.spring.core.discount;
 
-import org.springframework.stereotype.Component;
-
 import com.spring.core.member.Grade;
 import com.spring.core.member.Member;
+import org.springframework.stereotype.Component;
 
 @Component
 public class FixDiscountPolicy implements DiscountPolicy {

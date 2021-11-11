@@ -1,14 +1,13 @@
 package com.spring.core.autowired;
 
-import java.util.Optional;
-
+import com.spring.core.member.Member;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.lang.Nullable;
 
-import com.spring.core.member.Member;
+import java.util.Optional;
 
 public class AutowiredTest {
 	

@@ -1,10 +1,8 @@
 package com.spring.core.beanfind;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
-import java.util.Map;
-
+import com.spring.core.discount.DiscountPolicy;
+import com.spring.core.discount.FixDiscountPolicy;
+import com.spring.core.discount.RateDiscountPolicy;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
@@ -12,9 +10,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.spring.core.discount.DiscountPolicy;
-import com.spring.core.discount.FixDiscountPolicy;
-import com.spring.core.discount.RateDiscountPolicy;
+import java.util.Map;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ApplicationContextExtendsFindTest {
 

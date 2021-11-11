@@ -1,12 +1,10 @@
 package com.spring.core.order;
 
 import com.spring.core.discount.DiscountPolicy;
-import org.springframework.stereotype.Component;
-
 import com.spring.core.member.Member;
 import com.spring.core.member.MemberRepository;
-
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor

@@ -1,12 +1,11 @@
 package com.spring.core.order;
 
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
-
 import com.spring.core.discount.FixDiscountPolicy;
 import com.spring.core.member.Grade;
 import com.spring.core.member.Member;
 import com.spring.core.member.MemoryMemberRepository;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class OrderServiceImplTest {
 	

@@ -1,13 +1,12 @@
 package com.spring.core.order;
 
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import com.spring.core.AppConfig;
 import com.spring.core.member.Grade;
 import com.spring.core.member.Member;
 import com.spring.core.member.MemberService;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class OrderServiceTest {
 
