@@ -8,13 +8,18 @@
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.user" value="inkyu192"/>
             <property name="javax.persistence.jdbc.password" value="RndurRndur1!"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://database-1.cckkl5udwr1r.ap-northeast-2.rds.amazonaws.com:3306/mysql"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://database-1.cckkl5udwr1r.ap-northeast-2.rds.amazonaws.com:3306/jpa"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
 
             <!-- 옵션 -->
+            <!-- sql 로그 출력 유무 -->
             <property name="hibernate.show_sql" value="true"/>
+            <!-- sql 로그 이쁘게 출력 -->
             <property name="hibernate.format_sql" value="true"/>
+            <!-- sql 로그 앞에 코멘트 출력 -->
             <property name="hibernate.use_sql_comments" value="true"/>
+            <!-- 사이즈만큼 모아서 데이터베이스에 한방에 네트워크로 연동 -->
+            <property name="hibernate.jdbc.batch_size" value="10"/>
             <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
         </properties>
     </persistence-unit>
