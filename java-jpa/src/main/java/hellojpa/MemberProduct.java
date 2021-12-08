@@ -19,8 +19,6 @@ public class MemberProduct {
 
     private int count;
     private int price;
-    private int price2;
-    private int price3;
 
     private LocalDateTime orderDateTime;
 }
