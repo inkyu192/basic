@@ -15,7 +15,7 @@ public class OrderItem {
 
     @ManyToOne
     @JoinColumn(name = "ITEM_ID")
-    private Iteam iteam;
+    private Item iteam;
 
     private int orderPrice;
     private int count;
@@ -36,11 +36,11 @@ public class OrderItem {
         this.order = order;
     }
 
-    public Iteam getIteam() {
+    public Item getIteam() {
         return iteam;
     }
 
-    public void setIteam(Iteam iteam) {
+    public void setIteam(Item iteam) {
         this.iteam = iteam;
     }
 
