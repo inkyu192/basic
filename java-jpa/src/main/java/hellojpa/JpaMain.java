@@ -1,5 +1,7 @@
 package hellojpa;
 
+import org.hibernate.Hibernate;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -25,16 +27,15 @@ public class JpaMain {
             em.clear();
 
             Member refMember = em.getReference(Member.class, member1.getId());
-            System.out.println("refMember.getClass() = " + refMember.getClass());
+            System.out.println("refMember = " + refMember.getClass()); //Proxy
+            Hibernate.initialize(refMember); //강제초기화
 
-            Member findMember = em.getReference(Member.class, member1.getId());
-            System.out.println("findMember.getClass() = " + findMember.getClass());
 
-            System.out.println("refMember == findMember: " + (refMember == findMember));
 
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
+            e.printStackTrace();
         } finally {
             em.close();
         }
