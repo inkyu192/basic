@@ -8,7 +8,7 @@
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.user" value="inkyu192"/>
             <property name="javax.persistence.jdbc.password" value="RndurRndur1!"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://database-1.cckkl5udwr1r.ap-northeast-2.rds.amazonaws.com:3306/jpa"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://database-1.cckkl5udwr1r.ap-northeast-2.rds.amazonaws.com:3306/jpabook"/>
             <!-- 방언 설정 -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
 
