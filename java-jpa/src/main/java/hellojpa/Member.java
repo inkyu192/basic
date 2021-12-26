@@ -1,9 +1,6 @@
 package hellojpa;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 public class Member {
@@ -22,14 +19,6 @@ public class Member {
     //주소
     @Embedded
     private Address homeAddress;
-
-    @Embedded
-    @AttributeOverrides({
-            @AttributeOverride(name = "city", column = @Column(name = "WORK_CITY")),
-            @AttributeOverride(name = "street", column = @Column(name = "WORK_STREET")),
-            @AttributeOverride(name = "zipcode", column = @Column(name = "WORK_ZIPCODE"))
-    })
-    private Address workAddress;
 
     public Long getId() {
         return id;
