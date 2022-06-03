@@ -27,7 +27,7 @@ public class HelloTraceV1 {
     public void exception(TraceStatus status, Exception e) {
         complete(status, e);
     }
-
+    {}
     private void complete(TraceStatus status, Exception e) {
         Long stopTimeMs = System.currentTimeMillis();
         long resultTimeMs = stopTimeMs - status.getStartTimeMs();
@@ -41,9 +41,9 @@ public class HelloTraceV1 {
 
     private static String addSpace(String prefix, int level) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < level; i++) {
-            sb.append( (i == level - 1) ? "|" + prefix : "| ");
 
+        for (int i = 0; i < level; i++) {
+            sb.append((i == level - 1) ? "|" + prefix : "| ");
         }
         return sb.toString();
     }
